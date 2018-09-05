@@ -21,7 +21,9 @@ while (cobalagi) {
 	} else if ( player == 'batu' ) {
 		result = (com == 'gunting') ? 'MENANG' : 'KALAH';
 	} else if ( player == 'kertas') {
-		result = (com == 'gunting') ? 'MENANG' : 'KALAH';
+		result = (com == 'gunting') ? 'KALAH' : 'MENANG';
+	} else if ( player == 'batu') {
+		result = (com == 'kertas') ? 'MENANG' : 'KALAH';
 	} else {
 		alert('invalid');
 	}
